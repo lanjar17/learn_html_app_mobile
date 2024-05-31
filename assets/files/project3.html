@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pengaduan Pelanggan</title>
+</head>
+
+<body>
+
+    <div
+        style="max-width: 500px; margin: auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Form Pengaduan Pelanggan</h2>
+        <form action="/submit-complaint" method="POST">
+            <div style="margin-bottom: 15px;">
+                <label for="fullname">Nama Pengirim</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="email">Alamat Email</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="complaintType">Jenis Keluhan</label><br>
+                <select id="complaintType" name="complaintType" required>
+                    <option value="">Pilih jenis keluhan</option>
+                    <option value="Pelayanan">Pelayanan</option>
+                    <option value="Produk">Produk</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="complaint">Pengaduan/Masukan</label><br>
+                <textarea id="complaint" name="complaint" rows="5" required></textarea>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <input type="checkbox" id="contact" name="contact" required>
+                <label for="contact">Saya setuju untuk dihubungi kembali</label>
+            </div>
+
+            <div>
+                <button type="submit"
+                    style="width: 100%; padding: 10px; background-color: #dc3545; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">Kirim</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

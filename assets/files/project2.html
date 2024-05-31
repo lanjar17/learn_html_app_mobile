@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Workshop</title>
+</head>
+
+<body>
+
+    <div
+        style="max-width: 500px; margin: auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Form Pendaftaran Workshop</h2>
+        <form action="/submit-registration" method="POST">
+            <div style="margin-bottom: 15px;">
+                <label for="fullname">Nama Lengkap</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="email">Alamat Email</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="phone">Nomor Telepon</label><br>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label>Topik yang diminati</label><br>
+                <input type="checkbox" id="html" name="topic" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="topic" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="javascript" name="topic" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="schedule">Jadwal Preferensi</label><br>
+                <select id="schedule" name="schedule" required>
+                    <option value="">Pilih jadwal preferensi</option>
+                    <option value="Pagi">Pagi</option>
+                    <option value="Siang">Siang</option>
+                    <option value="Malam">Malam</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label>Status Mahasiswa</label><br>
+                <input type="radio" id="mahasiswa" name="status" value="Mahasiswa" required>
+                <label for="mahasiswa">Mahasiswa</label>
+                <input type="radio" id="non-mahasiswa" name="status" value="Bukan Mahasiswa">
+                <label for="non-mahasiswa">Bukan Mahasiswa</label>
+            </div>
+
+            <div>
+                <button type="submit"
+                    style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">Daftar
+                    Sekarang</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
